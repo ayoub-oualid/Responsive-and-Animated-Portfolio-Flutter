@@ -23,8 +23,8 @@ class Knowledges extends StatelessWidget {
           ),
         ),
         KnowledgeText(text: "Flutter, Dart"),
-        KnowledgeText(text: "Stylus, Sass, Less"),
-        KnowledgeText(text: "Gulp, Webpack, Grunt"),
+        KnowledgeText(text: "Photoshop, Illustrator"),
+        KnowledgeText(text: "HTML, CSS, JS"),
         KnowledgeText(text: "GIT Knowledge"),
       ],
     );

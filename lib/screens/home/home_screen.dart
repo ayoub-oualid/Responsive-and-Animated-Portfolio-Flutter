@@ -5,6 +5,7 @@ import 'components/heighlights.dart';
 import 'components/home_banner.dart';
 import 'components/my_projects.dart';
 import 'components/recommendations.dart';
+//import 'components/recommendations.dart';
 
 class HomeScreen extends StatelessWidget {
   const HomeScreen({Key? key}) : super(key: key);
@@ -14,9 +15,14 @@ class HomeScreen extends StatelessWidget {
     return MainScreen(
       children: [
         HomeBanner(),
-        HighLightsInfo(),
+        Opacity(
+          opacity: 0,
+          child: HighLightsInfo()
+          ),
         MyProjects(),
-        Recommendations(),
+        Align(
+          alignment: Alignment.centerLeft,
+          child: Recommendations()),
       ],
     );
   }

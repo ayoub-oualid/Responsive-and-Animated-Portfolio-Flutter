@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_profile/constants.dart';
 import 'package:flutter_svg/svg.dart';
+import 'package:url_launcher/url_launcher.dart';
 
 import 'area_info_text.dart';
 import 'coding.dart';
@@ -26,16 +27,12 @@ class SideMenu extends StatelessWidget {
                 child: Column(
                   children: [
                     AreaInfoText(
-                      title: "Residence",
-                      text: "Bangladesg",
-                    ),
-                    AreaInfoText(
                       title: "City",
-                      text: "Dhaka",
+                      text: "Rabat, Morocco",
                     ),
                     AreaInfoText(
                       title: "Age",
-                      text: "22",
+                      text: "21",
                     ),
                     Skills(),
                     SizedBox(height: defaultPadding),
@@ -44,7 +41,7 @@ class SideMenu extends StatelessWidget {
                     Divider(),
                     SizedBox(height: defaultPadding / 2),
                     TextButton(
-                      onPressed: () {},
+                      onPressed: () {launchUrl(Uri.parse("https://drive.google.com/file/d/1jYeXZGBPtZFoK7k2r5bNtU-aKer-IDxx/view?usp=sharing"));},
                       child: FittedBox(
                         child: Row(
                           children: [
@@ -70,15 +67,15 @@ class SideMenu extends StatelessWidget {
                         children: [
                           Spacer(),
                           IconButton(
-                            onPressed: () {},
+                            onPressed: () {launchUrl(Uri.parse("https://www.linkedin.com/in/oualid-ayoub/"));},
                             icon: SvgPicture.asset("assets/icons/linkedin.svg"),
                           ),
                           IconButton(
-                            onPressed: () {},
+                            onPressed: () {launchUrl(Uri.parse("https://github.com/ayoub-oualid"));},
                             icon: SvgPicture.asset("assets/icons/github.svg"),
                           ),
                           IconButton(
-                            onPressed: () {},
+                            onPressed: () {launchUrl(Uri.parse("https://twitter.com/0riginal_angel"));},
                             icon: SvgPicture.asset("assets/icons/twitter.svg"),
                           ),
                           Spacer(),
